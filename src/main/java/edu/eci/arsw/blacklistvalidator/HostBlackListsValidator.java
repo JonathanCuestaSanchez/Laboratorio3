@@ -49,10 +49,22 @@ public class HostBlackListsValidator {
                 thread.add(hilo);
 
                 hilo.start();
-                
             }
         } else {
+            int flag = 0;
+            int x = (int) skds.getRegisteredServersCount() / a;
+            for (int i = 0; i < a; i++) {
 
+                flag += x;
+                if (flag > skds.getRegisteredServersCount()) {
+                    flag = skds.getRegisteredServersCount();
+                }
+                BlacklistThread hilo = new BlacklistThread(flag - x, flag, ipaddress, skds);
+
+                thread.add(hilo);
+
+                hilo.start();
+            }
         }
         for (BlacklistThread i : thread) {
             try {

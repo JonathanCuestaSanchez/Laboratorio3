@@ -35,7 +35,7 @@ public class BlacklistThread extends Thread {
     public void run() {
         
         for (int i=a;i<b && ocurrencesCount<BLACK_LIST_ALARM_COUNT;i++){
-            System.out.println(i);
+            
             checkedListsCount++;
             
             if (skds.isInBlackListServer(i, ip)){
