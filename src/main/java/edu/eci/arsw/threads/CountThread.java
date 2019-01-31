@@ -18,7 +18,7 @@ public class CountThread extends Thread{
         this.a = a;
         this.b = b;
         System.out.println("my thread created" + this);
-        start();
+        run();
     }
 
     public void run() {
