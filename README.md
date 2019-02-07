@@ -44,7 +44,11 @@ Una buena manera de poder parar la ejecucion de los hilos, es usando metodos de 
 *_Part IV - Performance Evaluation:_*
 -------
 
+Al ejecutar las puebas en jVisual, encontramos la siguiente grafica de solution time vs. Number of threads
 
+![alt text][3]
+
+[3]:https://github.com/JonathanCuestaSanchez/Laboratorio3/blob/master/img/Captura.PNG
 
 
 
